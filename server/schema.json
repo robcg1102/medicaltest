@@ -1,0 +1,71 @@
+{
+	"videogames": {
+		"_id": {
+			"primaryKey": true,
+			"type": "Object",
+			"required": true
+		},
+		"name": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"developer": {
+			"type": "Object",
+			"structure": {
+				"_id": {
+					"primaryKey": true,
+					"type": "Object",
+					"required": true
+				},
+				"name": {
+					"type": "string",
+					"required": true
+				}
+			},
+			"required": true
+		},
+		"year": {
+			"type": "string",
+			"required": true
+		},
+		"console": {
+			"type": "Array",
+			"required": true
+		},
+		"image": {
+			"type": "string",
+			"required": true
+		},
+		"is_active": {
+			"type": "boolean",
+			"required": true
+		}
+	},
+	"consoles": {
+		"_id": {
+			"primaryKey": true,
+			"type": "Object",
+			"required": true
+		},
+		"name": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"developers": {
+		"_id": {
+			"primaryKey": true,
+			"type": "Object",
+			"required": true
+		},
+		"name": {
+			"type": "string",
+			"required": true
+		}
+	}
+}
